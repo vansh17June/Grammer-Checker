@@ -38,7 +38,7 @@ async function checkGrammar(selectedText) {
 
     try {
         // Send the selected text to the backend for grammar checking
-        const response = await fetch('http://localhost:3000/submit/CheckGrammer', {
+        const response = await fetch('https://grammer-checker-backend-cvqc.onrender.com/submit/CheckGrammer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
